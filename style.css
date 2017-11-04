@@ -1,0 +1,28 @@
+form{
+	width: 30%;
+	margin: auto;
+}
+h3{
+	text-align: center;
+	margin: 50px;
+}
+label{
+	    width: 100px;
+    display: inline-block;
+    padding: 16px;
+}
+input[type="text"] {
+    height: 20px;
+}
+i {
+    font-size: 14px;
+}
+input[type="submit"] {
+    padding: 8px 16px;
+    margin: 16px 0 0 122px;
+    background: #000;
+    color: #fff;
+}
+a{
+    cursor: disable;
+}

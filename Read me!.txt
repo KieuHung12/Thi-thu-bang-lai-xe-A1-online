@@ -1,1 +1,18 @@
 Hello
+/* ten database: Data
+ten cac bang, cac cot viet thuong
+LoaiCauHoi(
+    MaLoaiCauHoi
+    TenLoaiCauHoi
+)
+CauHoi(
+    MaCauHoi
+    NoiDungCauHoi
+    CauHoi1
+    CauHoi2
+    CauHoi3
+    CauHoi4
+    DapAn1
+    DapAn2
+    MaLoaiCauHoi
+)
