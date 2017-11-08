@@ -1,0 +1,8 @@
+.my_media {
+    padding: 15px;
+    margin-bottom:10px; 
+    min-height: 150px;
+    max-height: 250px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  }
+  
