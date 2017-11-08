@@ -11,7 +11,7 @@
             {
                 if($value == $name) return true;
             }
-            //return false;
+            return false;
         }
     }
 ?>
