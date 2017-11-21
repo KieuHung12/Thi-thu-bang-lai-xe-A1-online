@@ -25,6 +25,25 @@ class Lop_Bus {
         $this->cauHoi = new CauHoi();
     }
 
+    function getCauHoi($mch = 1)
+    {
+        $sql = "select * from cauhoi where MaCauHoi = :mch";
+        $kq = $this->data->getArray($sql,array(':mch' => $mch));
+        return $kq;
+    }
+    
+    function getCauHoiToJson()
+    {
+        return addslashes(json_encode($this->getCauHoi()));
+    }
+    
+    function timCauhoi($nd = '')
+    {
+        $sql = "select * from cauhoi where NoiDungCauHoi like :nd";
+        $kq = $this->data->getArray($sql,array(':nd' => '%'.$nd.'%'));
+        return $kq;
+    }
+    
     function getAllCauHoi(){
         $sql = "select * from cauhoi";
         $kq = $this->data->getArray($sql);
@@ -33,7 +52,7 @@ class Lop_Bus {
     
     function getAllCauHoiToJson()
     {
-        return json_encode($this->getAllCauHoi());
+        return addslashes(json_encode($this->getAllCauHoi()));
     }
     
     function getTheoMaLoai($maloai = 1)
@@ -57,7 +76,10 @@ class Lop_Bus {
     
     function getTheoMaDeToJson($made = 1)
     {
-        return json_encode($this->getTheoMaDe($made));
+        return addslashes(json_encode($this->getTheoMaDe($made)));
     }
 }
-         
+/*
+ $bus = new Lop_Bus();
+ var_dump($bus->getTheoMaLoai(1));
+*/

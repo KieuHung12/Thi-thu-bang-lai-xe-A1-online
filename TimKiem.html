@@ -1,0 +1,34 @@
+<script>
+    function SoThayDoi(val)
+    {
+        $(".loading").show(100);
+        $.get('TimKiem.php?MaCauHoi='+val,'',function(data,status,xhr){      
+            $(".loading").delay(1000).hide(100,function(){
+                $("#TimKiem_KetQua").html(data);
+            });
+        });
+    }
+    
+    function NoiDungThayDoi(val)
+    {
+        $(".loading").show(100);
+        $.get('TimKiem.php?NoiDungCauHoi='+val,'',function(data,status,xhr){      
+            $(".loading").delay(1000).hide(100,function(){
+                $("#TimKiem_KetQua").html(data);
+            });
+        });
+    }
+</script>
+<div class="TimKiem">
+    <p>Nhập số câu hỏi:</p>
+    <input type="number" min="1" max="150" placeholder="Enter" onchange="SoThayDoi(this.value);">
+    <i class="fa fa-superpowers fa-spin fa-fw loading" aria-hidden="true" style="display:none"></i>
+    
+    <p>Nhập nội dung câu hỏi:</p>
+    <input type="text" placeholder="Enter" onchange="NoiDungThayDoi(this.value);">
+    <i class="fa fa-superpowers fa-spin fa-fw loading" aria-hidden="true" style="display:none"></i>
+    
+    <div id="TimKiem_KetQua">
+    
+    </div>
+</div>

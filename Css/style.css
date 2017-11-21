@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+li{
+    padding-left: 1rem;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    background: lavender;
+}
+.header h1
+{
+    padding-left: 20px;
+}
+.left
+{
+    position: fixed;
+    top: 50px;
+    width: 15%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background: lightgray;
+}
+.left > div , .A2
+{
+    padding-top: 1rem;
+}
+.left ul
+{
+    list-style: none;
+}
+#NoiDung
+{
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    z-index: -1;
+    width: 85%;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow: auto;
+}
+#NoiDung ol{
+    padding-left: 1rem;
+}
