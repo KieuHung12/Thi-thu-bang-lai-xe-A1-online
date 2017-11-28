@@ -32,7 +32,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-            <h1 class="text-center">THI SÁT HẠCH LÁI XE HẠNG A1 ONLINE</h1>
+            <h2 class="text-center">THI SÁT HẠCH LÁI XE HẠNG A1 ONLINE</h2>
             </div>
         </div>    
     </div>

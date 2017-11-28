@@ -13,7 +13,7 @@ function inCauHoi($obj = array(
         $str = '';
         $str .= "<p><b>Câu hỏi ".$obj["MaCauHoi"].": ";
         $rep = str_replace('[IMG=ch','<br/><img src="img/',$obj["NoiDungCauHoi"]);
-        $rep = str_replace('.jpg][/IMG]','.jpg">',$rep);
+        $rep = str_replace('.jpg][/IMG]','.jpg" width="400px" height="175px">',$rep);
         $str .= $rep."</b></p>";
         $str .= '<ol>';
         $str .= '<li>'.$obj['CauHoi1'].'</li>';

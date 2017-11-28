@@ -63,7 +63,7 @@ function inCauHoi(mch)
         var str = '';
         str += "<p><b>Câu hỏi " + chht + ": ";
         var rep = obj.NoiDungCauHoi.replace('\[IMG=ch','<br/><img src=\"img/');
-        rep = rep.replace('.jpg][/IMG]','.jpg\">');
+        rep = rep.replace('.jpg][/IMG]','.jpg\" width="400px" height="175px">');
         str += rep + "</b></p>";
         str += '<ol>';
         str += '<li><input type="checkbox" name="cauHoi1" id="cauHoi1" onchange="ghiKetQua()"> <label for="cauHoi1"> ' + obj.CauHoi1 + '</label></li>';
@@ -83,7 +83,7 @@ function inCauHoi(mch)
         var str = '';
         str += "<p><b>Câu hỏi " + chht + ": ";
         var rep = obj.NoiDungCauHoi.replace('\[IMG=ch','<br/><img src=\"img/');
-        rep = rep.replace('.jpg][/IMG]','.jpg\">');
+        rep = rep.replace('.jpg][/IMG]','.jpg\" width="400px" height="175px">');
         str += rep + "</b></p>";
         str += '<ol>';
         str += '<li>' + obj.CauHoi1 + '</li>';
@@ -163,7 +163,7 @@ function finish(){
     xemcaccauhoi_in();
     inCauHoi(chht);
     inKetQua();
-    $("#nutketthucbaithi").html('<a href="/thi-thu-bang-lai-xe-A1-online/index.php">Quay về trang chủ</a>'); 
+    $("#nutketthucbaithi").html('<a href="#" onclick="window.history.go(-1)">Quay về trang chủ</a>'); 
 }
 
 function inKetQua()
@@ -188,7 +188,7 @@ function inKetQua()
     $("#soCauDung").text("Số câu đúng: " + socaudung);
     $("#soCauSai").text("Số câu sai: " + socausai);
     $("#ketQua").text("Kết quả: " + truot);
-    $("#ketQua").html("<p>Các câu đúng: màu xanh</p><p>Các câu sai: màu đỏ</p>");
+    $("#ChuThich").html("<p>Các câu đúng: màu xanh</p><p>Các câu sai: màu đỏ</p>");
 }
 
 $(document).ready(function(){

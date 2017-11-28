@@ -47,7 +47,7 @@ function htmlCauHoi(obj)
     var str = '';
     str += "<p><b>Câu hỏi " + obj.MaCauHoi + ": ";
     var rep = obj.NoiDungCauHoi.replace('\[IMG=ch','<br/><img src=\"img/');
-    rep = rep.replace('.jpg][/IMG]','.jpg\">');
+    rep = rep.replace('.jpg][/IMG]','.jpg\" width="400px" height="175px">');
     str += rep + "</b></p>";
     str += '<ol>'
     str += '<li>' + obj.CauHoi1 + '</li>';
